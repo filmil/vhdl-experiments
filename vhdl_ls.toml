@@ -13,8 +13,14 @@ ex2.files = [
     'ex2/ex2.vhdl',
     'ex2/ex2_body.vhdl',
 ]
-ex2.files = [
+ex3.files = [
     'ex3/ex3.vhdl',
+]
+ex4.files = [
+    'ex4/ex4.vhdl',
+]
+ex4_lib1.files = [
+    'ex4/lib1/lib1.vhdl',
 ]
 
 # Wildcards are supported
