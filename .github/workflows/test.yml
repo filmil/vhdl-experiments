@@ -14,7 +14,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Install prequisites
+      - name: Install prerequisites
         run: |
           sudo apt-get install \
             autoconf \
