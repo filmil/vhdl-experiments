@@ -13,6 +13,9 @@ ex2.files = [
     'ex2/ex2.vhdl',
     'ex2/ex2_body.vhdl',
 ]
+ex2.files = [
+    'ex3/ex3.vhdl',
+]
 
 # Wildcards are supported
 #lib3.files = [
