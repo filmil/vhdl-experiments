@@ -17,17 +17,18 @@ end package;
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use work.iface.all;
 entity counter is
     port (
         clk: in std_logic;
         rst_n: in std_logic;
-        output: out work.iface.count_type
+        output: out count_type
     );
 end entity counter;
 
 architecture rtl of counter is
 
-    signal r, rin: work.iface.count_type;
+    signal r, rin: count_type;
 
 begin
 
@@ -37,7 +38,7 @@ begin
     end process;
 
     comb: process(r)
-        variable v: work.iface.count_type;
+        variable v: count_type;
     begin
         v := r; -- initialize
 
@@ -45,7 +46,7 @@ begin
         v.zero := v.val = 0; -- compute the zero flag
         
         if rst_n = '1' then -- sync reset
-            v := work.iface.zero;
+            v := zero;
         end if;
 
         rin <= v; -- drive the sequential input
