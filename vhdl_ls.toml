@@ -9,6 +9,10 @@ ex1.files = [
 pkg.files = [
     'ex1/package.vhdl',
 ]
+ex2.files = [
+    'ex2/ex2.vhdl',
+    'ex2/ex2_body.vhdl',
+]
 
 # Wildcards are supported
 #lib3.files = [
