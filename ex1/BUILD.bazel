@@ -16,7 +16,7 @@ vhdl_library(
 
 vhdl_elaborate(
     name = "hello_world",
-    library = ":work",
+    library = ":ex1",
 )
 
 vhdl_run(

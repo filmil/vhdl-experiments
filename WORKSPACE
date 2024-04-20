@@ -9,6 +9,7 @@ git_repository(
     name = "bazel_rules_nvc",
     commit = "5662b2d15267aa6a907068160fc1d64be9233ec8",
     remote = "https://github.com/filmil/bazel_rules_nvc",
+    shallow_since = "1713584075 -0700",
 )
 
 
